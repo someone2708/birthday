@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday 🎉</title>
+  
+  
+    
+  <meta name="description" content="A sweet birthday message page." />
+  <meta property="og:title" content="Annu's Birthday!" />
+  <meta property="og:description" content="Open me for a birthday surprise ✨" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root{
+      --bg-1:#fff4fb; /* light pink */
+      --bg-2:#e6f7ff; /* light blue */
+      --card:#ffffff;
+      --ink:#222222;
+      --muted:#5b6470;
+      --accent:#ff3b81; /* hot pink */
+      --accent-2:#7c4dff; /* purple */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--ink);
+      background: radial-gradient(1200px 800px at 10% 10%, var(--bg-1), transparent 70%),
+                  radial-gradient(1200px 800px at 90% 20%, var(--bg-2), transparent 70%),
+                  #fff;
+      padding: 24px;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .card{
+      width:min(720px, 94vw);
+      background:var(--card);
+      border-radius:24px;
+      box-shadow:0 10px 30px rgba(0,0,0,.08);
+      overflow:hidden;
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .top{
+      padding:36px 28px 16px;
+      text-align:center;
+      background:linear-gradient(135deg, rgba(255,59,129,.08), rgba(124,77,255,.08));
+    }
+    .eyebrow{
+      font-size:13px;letter-spacing:.2em;text-transform:uppercase;
+      color:var(--muted);
+    }
+    h1{
+      margin:.3rem 0 .4rem;
+      font-size:clamp(28px, 5vw, 44px);
+      line-height:1.1;
+    }
+    .big-emoji{font-size:clamp(28px, 5vw, 40px)}
+    .name{
+      color:transparent;
+      background:linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip:text; background-clip:text;
+      font-weight:800;
+    }
+    .content{padding:16px 24px 28px}
+    .lead{
+      font-size:18px; line-height:1.6; color:var(--muted);
+      text-align:center; max-width:62ch; margin:0 auto 18px;
+    }
+    .list{
+      margin: 18px auto 8px; padding:0 0 0 18px; max-width:62ch;
+    }
+    .list li{margin:10px 0; line-height:1.5}
+    .signature{margin:24px auto 0; text-align:center; color:var(--muted)}
+    .signature strong{color:var(--ink)}
+    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(0,0,0,.08), transparent); margin:18px auto; width:92%}
+    .footer{
+      display:flex; align-items:center; justify-content:center; gap:8px;
+      padding:12px; font-size:13px; color:var(--muted); background:#fafafa;
+      border-top:1px solid rgba(0,0,0,.06);
+    }
+    .photo{display:block; width:min(460px, 86%); margin:14px auto 0; border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,.12)}
+    /* Cute floating confetti (CSS-only) */
+    .confetti{position:relative; isolation:isolate}
+    .confetti span{
+      position:absolute; inset:auto; top:-12px;
+      width:8px; height:12px; border-radius:2px; opacity:.75;
+      animation: fall linear infinite;
+    }
+    @keyframes fall{ to { transform: translateY(120vh) rotate(360deg); } }
+    /* place 14 confetti pieces */
+    .confetti span:nth-child(1){left:6%; background:#ff3b81; animation-duration:7s}
+    .confetti span:nth-child(2){left:14%; background:#7c4dff; animation-duration:8.5s; animation-delay: .5s}
+    .confetti span:nth-child(3){left:22%; background:#00bcd4; animation-duration:6.2s; animation-delay: .8s}
+    .confetti span:nth-child(4){left:30%; background:#ff9800; animation-duration:9s}
+    .confetti span:nth-child(5){left:38%; background:#8bc34a; animation-duration:7.6s; animation-delay: .3s}
+    .confetti span:nth-child(6){left:46%; background:#e91e63; animation-duration:8.2s; animation-delay: .9s}
+    .confetti span:nth-child(7){left:54%; background:#3f51b5; animation-duration:6.6s}
+    .confetti span:nth-child(8){left:62%; background:#ffc107; animation-duration:7.8s; animation-delay: .2s}
+    .confetti span:nth-child(9){left:70%; background:#009688; animation-duration:8.8s}
+    .confetti span:nth-child(10){left:78%; background:#9c27b0; animation-duration:7.1s; animation-delay: .4s}
+    .confetti span:nth-child(11){left:86%; background:#2196f3; animation-duration:6.7s}
+    .confetti span:nth-child(12){left:50%; background:#4caf50; animation-duration:9.5s; animation-delay: .6s}
+    .confetti span:nth-child(13){left:18%; background:#795548; animation-duration:8.9s; animation-delay: .1s}
+    .confetti span:nth-child(14){left:88%; background:#607d8b; animation-duration:7.4s; animation-delay: .7s}
+  </style>
+</head>
+<body>
+  <div class="confetti" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <main class="card" role="main">
+    <section class="top">
+      <div class="eyebrow">For my favorite human</div>
+      <h1>Happiiee Birthday, <span class="name"> ANNU </span>! <span class="big-emoji" aria-hidden="true">🎉🎂🎈</span></h1>
+    </section>
+
+    <section class="content">
+      <p class="lead">Wishing you a day as bright as your smile and a year filled with little wins, cozy moments, and big dreams coming true. You deserve all the love today. 💖</p>
+
+      <!-- Optional photo example -->
+      <img src="C:\Users\adars\OneDrive\Desktop\HTML\anupic.jpg" alt="Us celebrating" class="photo">
+        
+      <div class="divider"></div>
+
+      <ul class="list" aria-label="Messages for you">
+        <li>🎈 You make ordinary days feel special just by being in them.</li>
+        <li>🎁 May this year bring you new adventures, gentle mornings, and loud laughs.</li>
+        <li>💫 Keep shining—your kindness travels further than you think.</li>
+        <li> it's been more than 4 years since i met you and still it feels like it was just yesterday. thank you for giving me some life lessons. 
+            to be honest i met so many people in those year but i never found a people as innocent and transparent as you. i have lot of things to
+            tell you but i think it will become lengthy.
+            i have tried this for thr first time to check my knowledge or may be i don't have guts to tell you directly.
+            i hope you like it.
+        </li>
+        <li>🌟 I’m grateful to you always for all the memories and everything. i will buy a chocolate from your side.</li>
+      </ul>
+
+      <p class="signature">With love, <strong>HONEY</strong></p>
+    </section>
+
+    <footer class="footer" aria-label="Footer">
+      <span aria-hidden="true">✨</span>
+      <span>Made with a single HTML file.</span>
+      <span aria-hidden="true">✨</span>
+    </footer>
+  </main>
+</body>
+</html>
